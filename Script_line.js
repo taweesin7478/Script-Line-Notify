@@ -53,8 +53,10 @@ async function getonebox (accesstoken, oneid) {
         )
         if (getAccountOnebox.data.status === 'OK') {
             const dataonebox = getAccountOnebox.data.result
-        } else {
-            return { status: 'error' }
+        } else if (getAccountOnebox.data.status === 'ER') {
+            var text = "\nONEBOX \n" + "Staus Code: " + getAccountOnebox.data.errorCode + "\n" +
+                "Error: " + getAccountOnebox.data.errorMessage
+            sendMessage(text)
         }
     } catch (error) {
         console.log("getonebox error")
