@@ -35,7 +35,9 @@ async function LoginOneid (username, password) {
         }
     } catch (error) {
         console.log("LoginOneid error")
-        console.log(error)
+        var text = "\nONE ID \n" + "Staus Code: " + error.response.data.responseCode + "\n" +
+            "Error: " + error.response.data.errorMessage + " with status code " + error.response.data.responseCode
+        sendMessage(text)
         return error
     }
 }
@@ -59,7 +61,9 @@ async function getonebox (accesstoken, oneid) {
             sendMessage(text)
         }
     } catch (error) {
-        console.log("getonebox error")
+        var text = "\nONEBOX \n" + "Staus Code: " + error.response.data.responseCode + "\n" +
+            "Error: " + error.response.data.errorMessage + " with status code " + error.response.data.responseCode
+        sendMessage(text)
         return error
     }
 }

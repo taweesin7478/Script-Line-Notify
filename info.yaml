@@ -1,0 +1,23 @@
+database:
+  host: 192.168.90.20
+  port_ie: 27017
+  name_ie: "poc_test"
+  # host: 192.168.92.1
+  # port_ie: 27017
+  # name_ie: "meet-prd-new"
+  auth_source: "admin"
+  user: "root"
+  password: "admin@inet!"
+
+USER: taweesin7478
+PASS: --
+
+ONEID_CLIENT_ID: 230
+ONEID_CLIENT_SECRET: UBPf9z2XMcpJ79Gj0l1khXw6UDHv5bauPvFUWFpq
+ONEID_API_LOGIN: https://one.th/api/oauth/getpwd
+ONEBOX_AUTH: 0938fb91bfdb3995e986d10ecc4e7f5050da86f165c1b725fce7808043d0d51acbf4bbcb365f9da248fff5251ecf07bd68888201e9f196d3663d773d4bced8ad
+ONEBOX_GETACCOUNT: https://box.one.th/onebox_uploads/api/v2/get_account_byuserid
+
+token: h5BaKF21gYZcn3sVXrojOW7RD0QF3s32Y2254yDDBla
+lineNotify: https://notify-api.line.me/api/notify
+token_line: KzXWwqo329BX36FCr0IxWiCcKuAaPPIQ2GoVwAc2AGr
